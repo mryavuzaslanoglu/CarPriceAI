@@ -1,0 +1,223 @@
+.price-result {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.price-result::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b, #d97706);
+}
+
+.price-result-loading {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-skeleton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.skeleton-title {
+    width: 120px;
+    height: 20px;
+}
+
+.skeleton-price {
+    width: 200px;
+    height: 48px;
+}
+
+.skeleton-info {
+    width: 80%;
+    height: 60px;
+}
+
+/* Header */
+.price-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.price-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.4);
+}
+
+.price-icon svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.price-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Main Price */
+.price-main {
+    margin-bottom: var(--spacing-xl);
+}
+
+.price-value {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b, #d97706);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+}
+
+/* Price Range */
+.price-range {
+    margin-bottom: var(--spacing-xl);
+}
+
+.range-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: var(--spacing-md);
+}
+
+.range-fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    border-radius: 4px;
+    opacity: 0.7;
+}
+
+.range-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range-low,
+.range-high {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.range-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Metrics */
+.price-metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.metric-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+}
+
+.metric-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.metric-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Disclaimer */
+.price-disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.price-disclaimer svg {
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .price-result {
+        padding: var(--spacing-xl);
+    }
+
+    .price-value {
+        font-size: 2rem;
+    }
+
+    .price-metrics {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .metric-divider {
+        width: 80%;
+        height: 1px;
+    }
+}

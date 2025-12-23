@@ -1,0 +1,75 @@
+{
+  "model_type": "CatBoostRegressor",
+  "features": [
+    "marka",
+    "model",
+    "seri",
+    "yakitTuru",
+    "vitesTipi",
+    "kasaTipi",
+    "renk",
+    "cekisTipi",
+    "il",
+    "km_temiz",
+    "yil_temiz",
+    "motor_gucu_temiz",
+    "motor_hacmi_temiz",
+    "arac_yasi",
+    "km_per_yas",
+    "hasar_skoru",
+    "orjinal_parça_sayısı",
+    "lokal_boyalı_parça_sayısı",
+    "boyalı_parça_sayısı",
+    "değişen_parça_sayısı"
+  ],
+  "categorical_features": [
+    "marka",
+    "model",
+    "seri",
+    "yakitTuru",
+    "vitesTipi",
+    "kasaTipi",
+    "renk",
+    "cekisTipi",
+    "il"
+  ],
+  "numerical_features": [
+    "km_temiz",
+    "yil_temiz",
+    "motor_gucu_temiz",
+    "motor_hacmi_temiz",
+    "arac_yasi",
+    "km_per_yas",
+    "hasar_skoru",
+    "orjinal_parça_sayısı",
+    "lokal_boyalı_parça_sayısı",
+    "boyalı_parça_sayısı",
+    "değişen_parça_sayısı"
+  ],
+  "target": "log_fiyat",
+  "use_log_target": true,
+  "best_iteration": 673,
+  "hyperparameters": {
+    "iterations": 675,
+    "learning_rate": 0.06168235039020481,
+    "depth": 6,
+    "l2_leaf_reg": 0.19007703371288126
+  },
+  "train_metrics": {
+    "mae": 76146.83084305061,
+    "rmse": 487550.3312808403,
+    "r2": 0.8450262711270979,
+    "mape": 8.315028749117534
+  },
+  "test_metrics": {
+    "mae": 86524.88332181722,
+    "rmse": 251002.2796447756,
+    "r2": 0.9031859160355025,
+    "mape": 10.97088046891071
+  },
+  "cv_r2_mean": 0.7932475332786181,
+  "cv_r2_std": 0.11383910876781919,
+  "cv_mae_mean": 101356.28018520736,
+  "cv_mae_std": 20034.182942780237,
+  "optuna_used": true
+}

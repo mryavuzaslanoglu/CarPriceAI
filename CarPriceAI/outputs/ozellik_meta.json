@@ -1,0 +1,36 @@
+{
+  "kategorik_ozellikler": [
+    "marka",
+    "model",
+    "seri",
+    "renk",
+    "yakitTuru",
+    "vitesTipi",
+    "cekisTipi",
+    "kasaTipi",
+    "saticiTuru",
+    "il",
+    "takasUygunluk",
+    "hasarGecmisi"
+  ],
+  "sayisal_ozellikler": [
+    "fiyat_temiz",
+    "km_temiz",
+    "yil_temiz",
+    "motor_gucu_temiz",
+    "motor_hacmi_temiz",
+    "arac_yasi",
+    "km_per_yas",
+    "hasar_skoru",
+    "log_fiyat",
+    "marka_populerlik_log",
+    "orjinal_parça_sayısı",
+    "lokal_boyalı_parça_sayısı",
+    "boyalı_parça_sayısı",
+    "değişen_parça_sayısı"
+  ],
+  "hedef_degisken": "fiyat_temiz",
+  "log_hedef": "log_fiyat",
+  "toplam_satir": 6671,
+  "toplam_sutun": 31
+}
